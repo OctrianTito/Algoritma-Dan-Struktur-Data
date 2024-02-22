@@ -1,6 +1,7 @@
 public class Buku22 {
     String judul, pengarang;
     int halaman, stok, harga;
+    int jumlah;
 
     void tampilInformasi() {
         System.out.println("Judul: " + judul);
@@ -11,6 +12,7 @@ public class Buku22 {
     }
 
     void terjual(int jml) {
+        this.jumlah = jml;
         if (stok > 0) {
             stok -= jml;
             if (stok < 0) {
@@ -39,23 +41,25 @@ public class Buku22 {
         this.stok = stok;
         harga = har;
     }
-    public Buku22(int hrg, int disc, int hrgtotal) {
 
+    int hitungHargaTotal() {
+        int total = this.harga * jumlah;
+        return total;
     }
-
-    int hitungHargaTotal(int jml) {
-        return harga * jml;
-    }
-    int hitungDiskon(int hargaTotal) {
+    int hitungDiskon() {
         int diskon = 0;
-        if (hargaTotal > 150000) {
-            diskon = (int) 0.12 * hargaTotal;
-        } else if (hargaTotal >= 75000 && hargaTotal <= 150000) {
-            diskon = (int) 0.05 * hargaTotal;
+        if (hitungHargaTotal() > 150000) {
+            diskon = (int) (0.12 * hitungHargaTotal());
+        } else if (hitungHargaTotal() >= 75000 && hitungHargaTotal() <= 150000) {
+            diskon = (int) (0.05 * hitungHargaTotal());
         }
         return diskon;
     }
-    int hitungHargaBayar(int hargaTotal, int diskon) {
-        return hargaTotal * diskon;
+    int hitungHargaBayar() {
+        System.out.print("Total Harga Buku: " + hitungHargaTotal());
+        System.out.print("\nDiskon : " + hitungDiskon());
+        int bayar = hitungHargaTotal() - hitungDiskon();
+        System.out.print("\nTotal Harga Bayar : " + bayar);
+        return bayar; 
     }
 }
