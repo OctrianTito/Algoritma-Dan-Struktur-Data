@@ -46,7 +46,7 @@ public class BangunRuangMain {
         }
 
         for (int j = 0; j < i; j++) {
-            System.out.println("Limas ke-" + (j+1));
+            System.out.println("Bola ke-" + (j+1));
             System.out.println("Luas: " + bgn3[j].hitungLuasBola() + " cm^2");
             System.out.println("Volume : " + bgn3[j].hitungVolumeBola() + " cm^3");
         }
