@@ -21,7 +21,8 @@ public class Pangkat {
         }
     }
 
-    public Pangkat() {
-
+    public Pangkat(int nilai, int pangkat) {
+        this.nilai = nilai;
+        this.pangkat = pangkat;
     }
 }
