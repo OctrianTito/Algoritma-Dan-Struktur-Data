@@ -42,6 +42,12 @@ Buatlah implementasi program antrian layanan unit kemahasiswaan sesuai dengan ko
 a. Implementasi antrian menggunakan Queue berbasis Linked List!<br>
 b. Program merupakan proyek baru, bukan modifikasi dari soal nomor 1!<br>
 
-### OUTPUT
+### OUTPUT TUGAS 1
 <br>
-<img src="tugas.png">
+<img src="tugas1.png">
+<br>
+
+### OUTPUT TUGAS 2
+<br>
+<img src="tugas2.png">
+<br>
