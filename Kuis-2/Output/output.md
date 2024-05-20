@@ -5,6 +5,9 @@
 <b>NIM : 2341720078<b><br>
 <br>
 
+### Referensi Data
+Disini saya menggunakan data klasemen formula one tahun 2021 yang saya peroleh dari Google dan website resmi Formula One
+<br><br>
 <img src="1.png">
 <br>
 <img src="2.png">

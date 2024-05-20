@@ -30,6 +30,7 @@ public class Main {
     
         do {
             int inner;
+            System.out.println("DATA KLASEMEN FORMULA ONE TAHUN 2021");
             System.out.println("Menu:");
             System.out.println("1. Lihat hasil setiap balapan");
             System.out.println("2. Lihat Klasemen Akhir");
